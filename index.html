@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="music-info">
+      <img id="albumArt" src="image/cover 1.jpg" alt="Album Art">
+      <h2 id="songTitle">Song Title</h2>
+      <h3 id="artist">Artist</h3>
+    </div>
+    <div class="controls">
+      <button id="backwardBtn" onclick="backward()">Backward</button>
+      <button id="playPauseBtn" onclick="togglePlayPause()">Play</button>
+      <button id="forwardBtn" onclick="forward()">Forward</button>
+    </div>
+    <div class="song-slider">
+      <span id="currentTime">0:00</span>
+      <input type="range" id="songRange" min="0" value="0">
+      <span id="duration">0:00</span>
+    </div>
+    <audio id="audio" src="sample_audio.mp3" ontimeupdate="updateTime()"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
