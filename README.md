@@ -1,0 +1,1 @@
+This is a simple music player project built using HTML, CSS, and JavaScript. The music player allows users to play, pause, go backward and forward between songs, and displays the current time and duration of the music. It also shows album art, song title, and artist information for the currently playing song.
